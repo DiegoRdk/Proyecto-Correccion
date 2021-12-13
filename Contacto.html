@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/Nav_Foot_Estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/Contacto_Estilo.css    " />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="index.html"><img src="Imagenes/logo1.png"></a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Sitio</a></li>
+                <li><a href="Compra_Alq.html">Propiedades</a></li>
+                <li><a href="#">Emprendimientos</a></li>
+                <li><a href="#">Tasaciones</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const body = document.querySelector("body");
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu-list");
+        const menuBtn = document.querySelector(".menu-btn");
+        const cancelBtn = document.querySelector(".cancel-btn");
+        menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            body.classList.add("disabledScroll");
+        }
+        cancelBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            body.classList.remove("disabledScroll");
+        }
+
+        window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+        }
+    </script>
+
+    <div class="container">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Contactanos!</h3>
+          <p class="text">
+            Complete el formulario y nos contactaremos a la brevedad.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Avenida Federico Lacroze 3399, C.A.B.A.</p>
+            </div>
+            <div class="information">
+              <i class="fas fa-envelope"></i>
+              <p>info1@crecer.com.ar</p>
+            </div>
+            <div class="information">
+              <i class="fas fa-phone-alt"></i>
+              <p>4554-7776</p>
+            </div>
+            <div class="information">
+              <i class="fab fa-whatsapp"></i>
+              <p>+54 11 3475-2940</p>
+            </div>
+            <div class="information">
+              <i class="fab fa-whatsapp"></i>
+              <p>+54 11 6422-8081</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Nuestras redes sociales :</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ /">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/ ">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.tiktok.com">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="form" action="index.html" autocomplete="off" onsubmit="return validar();">
+            <h3 class="title">Dejanos tus datos</h3>
+            <div class="input-container">
+              <input id="name" type="text" name="name" class="input" required/>
+              <label for="">Nombre</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input id="email" type="email" name="email" class="input" required/>
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input id="phone" type="phone" name="phone" class="input"required />
+              <label for="">Tel/Cel</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea id="message" name="message" class="input" required></textarea>
+              <label for="">Mensaje</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Enviar" class="btn" />
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/contacto.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+    <link rel="stylesheet" href="css/Compra_Alq_Estilo.css">
+    <link rel="stylesheet" href="css/Nav_Foot_Estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="index.html"><img src="Imagenes/logo1.png"></a></div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                    <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Sitio</a></li>
+                <li><a href="Compra_Alq.html">Propiedades</a></li>
+                <li><a href="Pagina_construccion.html">Emprendimientos</a></li>
+                <li><a href="Pagina_construccion.html">Tasaciones</a></li>
+                <li><a href="contacto.html">Contactenos</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        
+        <div class="filtros">
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="venta" name="category">
+                        <label for="venta">Venta</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="alquiler" name="category">
+                        <label for="alquiler">Alquiler</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Operación
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+            <div class="select-box">
+                <div class="options-container">
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="belgrano" name="category">
+                        <label for="belgrano">Belgrano</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="caballito" name="category">
+                        <label for="caballito">Caballito</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="colegiales" name="category">
+                        <label for="colegiales">Colegiales</label>
+                    </div>
+
+                    <div class="option">
+                        <input type="radio" class="radio" id="palermo" name="category">
+                        <label for="palermo">Palermo</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="recoleta" name="category">
+                        <label for="recoleta">Recoleta</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="saavedra" name="category">
+                        <label for="saavedra">Saavedra</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="retiro" name="category">
+                        <label for="retiro">Retiro</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="Villadevoto" name="category">
+                        <label for="Villadevoto">Villa Devoto</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="villaurquiza" name="category">
+                        <label for="villaurquiza">Villa Urquiza</label>
+                    </div>
+                </div>
+                <div class="selected">
+                    Ubicación
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+           
+            <div class="select-box">
+                <div class="options-container">
+                    <div class="option">
+                        <input type="radio" class="radio" id="casa" name="category">
+                        <label for="casa">Casa</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="departamento" name="category">
+                        <label for="departamento">Departamento</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="ph" name="category">
+                        <label for="ph">Ph</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="ter_lot" name="category">
+                        <label for="ter_lot">Terreno/Lote</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="local" name="category">
+                        <label for="local">Local</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" class="radio" id="galpon" name="category">
+                        <label for="galpon">Galpón</label>
+                    </div>
+
+                </div>
+                <div class="selected">
+                    Tipo de Propiedad
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="">
+                </div>
+            </div>
+
+            <div class="wrapper">
+                <div class="values">
+                    <span id="range1">0</span>
+                    <span> &dash; </span>
+                    <span id="range2">999999</span>
+                </div>
+                <div class="containerS">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="999999" value="0" id="slider-1" oninput="slideOne()">
+                    <input type="range" min="0" max="999999" value="999999" id="slider-2" oninput="slideTwo()">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "posts-collect">
+        <div class = "posts-main-container">
+            
+            <div class = "all lote">
+                <div class = "post-img">
+                    <img src = "Imagenes/Departamento LUGONES4200.jpg" alt = "post">
+                    <span class = "category-name">VENTA  <br> Departamento</span>
+                </div> 
+                <div class = "post-content">
+                    <div class = "post-content-top">
+                          <span>
+                            <i class="fas fa-map-marker-alt"></i> LUGONES 4200 -Villa Urquiza
+                        </span>
+                    </div>
+                    <h2>USD 200.000</h2>
+                    <ul class="info-props">
+                        <li>
+                            <span><i class="fas fa-ruler-combined"></i><a> 9.15mts x 50.00mts</a></span>
+                            <span><i class="fas fa-home"></i><a> 3 Ambientes</a></span>
+                            <span><i class="fas fa-bed"></i><a> 2 Dormitorios</a></span>
+                            <span><i class="fas fa-shower"></i><a> 1 Baño</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <button type = "button" class = "read-btn">Ver Más</button>
+            </div>
+            
+            <div class = "all lote">
+                <div class = "post-img">
+                    <img src = "Imagenes/Departamento TACUARI100.jpg" alt = "post">
+                    <span class = "category-name">VENTA <br>CASA </span>
+                </div>
+
+                <div class = "post-content">
+                    <div class = "post-content-top">
+                         <span>
+                            <i class="fas fa-map-marker-alt"></i> TACUARI 100 - Villa Devoto
+                        </span>
+                    </div>
+                    <h2>USD 120.000</h2>
+                    <ul class="info-props">
+                        <li>
+                            <span><i class="fas fa-ruler-combined"></i><a> 8.66mts x 32.00mts</a></span>
+                            <span><i class="fas fa-home"></i><a> 2 Ambientes</a></span>
+                            <span><i class="fas fa-bed"></i><a> 1 Dormitorios</a></span>
+                            <span><i class="fas fa-shower"></i><a> 1 Baño</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <button type = "button" class = "read-btn">Ver Más</button>
+            </div>
+  
+            <div class = "all ph">
+                <div class = "post-img">
+                    <img src = "Imagenes/Departamento GANA1000.jpg" alt = "post">
+                    <span class = "category-name"> ALQUILER <br> DEPARTAMENTO</span>
+                </div>
+
+                <div class = "post-content">
+                    <div class = "post-content-top">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>GANA 100 - Recoleta 
+                        </span>
+                    </div>
+                    <h2>Precio a Consultar</h2>
+                    <ul class="info-props">
+                        <li>
+                            <span><i class="fas fa-ruler-combined"></i><a> 90m² Totales<br>50m² Cubiertos</a></span>
+                            <span><i class="fas fa-home"></i><a> 3 Ambientes</a></span>
+                            <span><i class="fas fa-bed"></i><a> 2 Dormitorios</a></span>
+                            <span><i class="fas fa-shower"></i><a> 1 Baño</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <button type = "button" class = "read-btn">Ver Más</button>
+            </div>
+          
+            <div class = "all local">
+                <div class = "post-img">
+                    <img src = "Imagenes/Federico Lacroze.jpg" alt = "post">
+                    <span class = "category-name">ALQUILER <br>LOCAL</span>
+                </div>
+
+                <div class = "post-content">
+                    <div class = "post-content-top">
+                            <span>
+                            <i class="fas fa-map-marker-alt"></i> FEDERICO LACROZE 3300 - SAAVEDRA
+                        </span>
+                    </div>
+                    <h2>Precio a Consultar</h2>
+                    <ul class="info-props">
+                        <li>
+                            <span><i class="fas fa-ruler-combined"></i><a> 153.40m² Totales<br>89.47m² Cubiertos PB<br>63.93m² Cubiertos Sótano</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <button type = "button" class = "read-btn">Ver Más</button>
+            </div>
+            <!-- Termina post -->
+            <!-- Comienza post -->
+            <div class = "all ph">
+                <div class = "post-img">
+                    <img src = "Imagenes/Zarraga 3700.jpg" alt = "post">
+                    <span class = "category-name">VENTA  <br> CASA</span>
+                </div>
+
+                <div class = "post-content">
+                    <div class = "post-content-top">
+                   
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i>  ZARRAGA 3200 - Belgrano
+                        </span>
+                    </div>
+                    <h2>USD 650.000</h2>
+                    <ul class="info-props">
+                        <li>
+                            <span><i class="fas fa-ruler-combined"></i><a> 347m² Totales<br>200m² Cubiertos</a></span>
+                            <span><i class="fas fa-home"></i><a> 6 Ambientes</a></span>
+                            <span><i class="fas fa-bed"></i><a> 3 Dormitorio</a></span>
+                            <span><i class="fas fa-shower"></i><a> 2 Baño</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <button type = "button" class = "read-btn">Ver Más</button>
+            </div>
+ 
+            <div class = "all casa">
+                <div class = "post-img">
+                    <img src = "Imagenes/Atahualpa.jpg" alt = "post">
+                    <span class = "category-name">VENTA <br>CASA</span>
+                </div>
+
+                <div class = "post-content">
+                    <div class = "post-content-top">
+                        <span>
+                            <i class="fas fa-map-marker-alt"></i> ATAHUALPA - Caballito
+                        </span>
+                    </div>
+                    <h2>USD 150.000</h2>
+                    <ul class="info-props">
+                        <li>
+                            <span><i class="fas fa-ruler-combined"></i><a> 120m² Totales <br>30m² Cubiertos</a></span>
+                            <span><i class="fas fa-home"></i><a> 3 Ambientes</a></span>
+                            <span><i class="fas fa-bed"></i><a> 1 Dormitorios</a></span>
+                            <span><i class="fas fa-shower"></i><a> |1 Baño</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <button type = "button" class = "read-btn">Ver Más</button>
+            </div>
+           
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="container">
+              
+            <div class="sec logosocials">
+                <a href="index.html"><img src="Imagenes/logo1.png" alt="Crecer Inmobiliario"></a>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/ /"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.tiktok.com/ "><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://www.instagram.com/ "><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="sec quicklinks">
+                <h2>Navegación Rápida</h2>
+                <ul>
+                    <li><a href="index.html">Sitio</a></li>
+                    <li><a href="Compra_Alq.html">Propiedades</a></li>
+                    <li><a href="Pagina_construccion.html">Emprendimientos</a></li>
+                    <li><a href="Pagina_construccion.html">Tasaciones</a></li>
+                    <li><a href="contacto.html"> Contactenos</a></li>
+                </ul>
+            </div>
+
+            <div class="sec asociations">
+                <h2>Relaciones Institucionales</h2>
+                <ul>
+                    <a href="http://colegioinmobiliario.org.ar/"><img src="Imagenes/cucicba.png" alt="CUCICBA"></a>
+                    <a href="https://www.cia.org.ar/"><img src="Imagenes/cia.png" alt="CIA"></a>
+                    <a href="https://www.zonaprop.com.ar/"><img src="Imagenes/Zonaprop.png" alt="ZONAPROP"></a>
+                    <a href="https://www.argenprop.com/"><img src="Imagenes/argenprop.png" alt="ARGENPROP"></a>
+                </ul>
+            </div>
+
+            <div class="sec contact">
+                <h2>Contactanos</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Avenida Federico Lacroze 3399, C.A.B.A.</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p>
+                            <a href="tel:45547776">4554-7776</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fab fa-whatsapp"></i></span>
+                        <p>
+                            <a href="tel:+541134752940">+54 11 3475-2940</a><br>
+                            <a href="tel:+541164228081">+54 11 6422-8081</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:info1@crecer.com.ar">info1@crecer.com.ar</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>Todos los derechos reservados &copy; CRECER INMOBILIARIO. 2021.</p>
+    </div>
+    <script src="js/Compra_Alq.js"></script>
+    
+</body>
+</html>
